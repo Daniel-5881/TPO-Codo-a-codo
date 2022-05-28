@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TPO</title>
+        <link rel="shortcut icon" href="./assets/img/world-cup.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+  
+<header class="header">
+  <nav class="nav1">
+      <ul class="nav-links">
+          <li><a class="navegar" href="index.html">Inicio</a></li>
+          <li><a class="navegar" href="fixture.html">Fixture</a></li> 
+          <li><a class="navegar" href="multimedia.html">Multimedia</a></li> 
+          <li><a class="navegar" href="contacto.html">Contacto</a></li> 
+      </ul>
+  </nav>
+  </header>
+
+
+<body>
+  <h2 class="formTitle">¿Querés recibir más información sobre la previa del mundial? <br>Registrate!</h2>
+  <div class="form-container" id="formulario">
+    <div id="error"></div>
+    <form action = "/" id="formulario1" name = "formulario1" method="GET">
+        <div class="formsection"><strong>Tus datos</strong>  </div>
+        
+        <div  class="input-info">
+            <label>Nombre: </label> <input type="text" id="nombre"  name="campo1"  placeholder="Juan">
+        </div>
+      
+        <div class="input-info">
+          <label>Apellido:  </label><input type="text" id="apellido" name="campo2"  placeholder="Pérez"> 
+        </div>
+      
+        <div class="input-info">
+          <label>E-mail: </label> <input type="email" id="email" name="campo3" placeholder="jperez@mail.com" />
+        </div>
+      
+        <div class="input-info">
+            <label>Teléfono:  </label><input type="text" id="telefono" name="campo4" />     
+        </div>
+        
+        <div class="formsection"><strong>Crea tu clave </strong> </div>
+        
+        <div  class="input-info">
+            <label>Clave </label><input type="password" id="password" name="campo5"    />
+        </div>
+
+        <div  class="input-info">
+            <label>Confirmá tu clave </label><input type="password" id="password1" name="campo6"  />
+        </div>
+
+        <div class="button-section">
+          <input type="submit" name="Registro" value="Enviar datos"/>
+          <span class="privacidad">
+            <input type="checkbox" name="campo7" id="checkbox" >
+            Acuerdo a nuestros <span class="responsive"></span>
+            <a class="terms" href="terminos_y_condiciones.html" target="_blank">Términos y condiciones</a>
+          </span>
+        </div>
+    </form>   
+  </div>
+
+
+<script src="./js/validacion.js"></script>
+</body>

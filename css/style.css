@@ -1,0 +1,709 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: FuenteTPO, Helvetica, sans-serif;
+    font-size: 0.8em;
+    min-height: 100%;
+    background-color:  white;
+}
+
+@font-face{
+    font-family: 'FuenteTPO';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf');
+}
+
+h1{
+    color: darkslategray;
+    font-size: 4em;
+    padding: 0.5%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h2{
+    color:darkslategray;
+    padding: auto;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+}
+
+ul li{
+    font-size: 0.5em;
+}
+
+p, a {
+    color:black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+a:hover{
+    color:#066aff;
+    font-size: 20px;
+}
+
+a:active{
+    color:#0d3b01;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    width: 100%;
+    background-color: rgb(166, 156, 252);
+    display:flex;
+    padding: 0px 20px;
+    position: sticky;
+}
+
+.nav1{
+    float: right;
+    justify-content: space-around;
+    list-style: none;   
+    column-gap: 10px;   
+   padding-left: 60vw;
+   width: 100%;
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;   
+    column-gap: 10px;
+
+}
+
+.navegar{
+    font-size: 1em;
+}
+
+#banner{
+    width: 100%;
+    height: 400px;
+    background-image: url('../assets/img/football_stadium_image.jpg');
+    background-position: center;
+    background-size: cover;
+    line-height: 150px;
+    text-align: center;
+}
+
+.bannerp{
+    color: #fff;
+    padding-top: 12.5%;
+    font-size: 4vw;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    animation-name: animar;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    font-weight: bold;
+}
+
+#campeon{
+    display: none ;
+    padding: 10%;
+}
+
+@keyframes animar{
+  0% {
+    color: white;
+  }
+  20% {
+    color: rgb(196, 196, 255);
+  }
+  30% {
+    color: silver;
+  }
+  50%{
+    color: gold;
+  }
+  60%{
+    color: yellow;
+  }
+  80%{
+    color: silver;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+
+.fa-solid {
+    color: gold;
+}
+
+#container{
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.grid-container {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: stretch;   
+    justify-content: center;
+  }
+
+.titulo2{
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+}
+.grid-item{
+    border: 2px solid white;
+    width: 32vw;
+    margin: 0.25%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(153, 213, 248, 0.863);
+}
+
+.grid-item img{
+    max-width: 100%;
+    max-height: 300px;
+    height: 250px;
+    display: flex;
+    border-style: groove;
+}
+
+.nota{
+    width: 100%;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.btn {
+    border: 2px solid darkslategray;
+    background: transparent;
+    border-radius: 6px;
+    color: darkslategray;
+    font-weight: bold;
+    padding: 2px;
+    margin: 1px;
+    }
+
+.caja{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 10px;
+    color: #FFF;
+}
+
+.caja1{
+    border-color:#709cfa;
+    border-width: 3px;
+    border-style: double;
+    border-radius: 15px;
+    margin: auto;
+    padding: 5px;
+}
+
+#seccioncaja{
+    display: inline-flexbox;
+    width: 100%;
+}
+
+.titulocaja{
+    width: 100%;
+    padding: auto;
+}
+
+.notih3{
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 1%;
+    color: #000;
+}
+
+.copa{
+    background-image: url(../assets/img/world-cup2.webp);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.catar{
+    background-image: url(../assets/img/qatar.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.historia{
+    background-image: url(../assets/img/selecciones.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.7;
+    }
+    
+    div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+    }
+    div.transbox h3 {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+    }    
+    
+.myP{
+    background-color: darkblue;
+    color:#FFF;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'FuentePersonalizada';
+    text-align: center;
+    margin-top: 5%;
+    width: 100vw;
+}
+
+/* RESPONSIVE MEDIAS QUERIES */
+@media screen and (max-width:1280px) {  
+
+    #banner{
+        background-color: #eee234;
+    }
+    #banner p{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #banner p{
+        text-align: center;
+    }
+
+    .formTitle{
+        font-size: 1.5em;
+        padding: 0%;
+    }
+
+    #error{
+        display: flex;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .form-container{
+        display: flex;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    #container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+
+    .grid-item{
+        display: grid;
+        grid-gap: 0.5em;
+    }
+
+    .grid-item img{
+        width: 100%;
+        height: auto;
+    }
+
+    .header{
+        align-items: center;
+        width: 100%;
+        position: relative;
+        background-color: lightblue;
+    }
+    
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+        display: list-item;
+        float: none;
+     }    
+     .nav1{
+         margin: auto;
+         padding-left: 10px !important;
+         align-self: center;
+     }
+}
+
+@media screen and (max-width:600px) {
+    .iframe1{
+        height: 300px;
+        width: 225px;
+    }
+    #banner p{
+        font-size: 2.5em;
+    }
+
+    div.transbox {
+        margin: 20px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.7;
+      }
+      
+      div.transbox p {
+        margin: 3%;
+        font-weight: bold;
+        color: #000000;
+      }
+      div.transbox h3 {
+        margin: 3%;
+        font-weight: bold;
+        color: #000000;
+      }
+}
+
+@media screen and (max-width:480px) {
+#banner{
+    margin-top:10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.header{
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.nav-links{
+    flex-direction: column;
+    text-align: center;
+    display: list-item;
+    float: none;
+ }
+
+ .nav1{
+     margin: auto;
+     padding-left: 10px;
+ }
+
+ .bannerp{
+    font-size: 1.5em;
+    text-align: center;
+ }
+
+ .iframe1{
+     width: auto; 
+     height: fit-content;     
+ }
+
+ .mediasect1{
+     width: auto; 
+     height: fit-content; 
+     margin: auto;
+ }
+
+ .form-container{
+    flex-direction: column;
+    text-align: center;
+    display: block;
+ }
+ 
+ #formulario{
+    width: 100%;
+    top: 70%;
+ }
+ .formTitle{
+     font-size: 1.2em;
+     margin-top: 0%;
+ }
+
+ .input-info{
+     flex-direction: column;
+     text-align: center;
+     display: flex;
+     margin-top: 10%;
+  }
+
+.mediatitle{
+ text-align: center;
+}
+
+.iframe1{
+ display: flex;
+ justify-content: center;
+}
+
+.transbox p{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter ;
+}
+
+.grid-item img{
+    width: 50%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-item {
+    width: 100%;
+}
+
+.grid-container{
+    flex-direction: column;
+    align-items: center;
+    display: block;
+    width: 100%;
+ }
+
+ h1, h2{
+     font-size: 2em;
+ }
+
+ .tablas{
+     font-size: 0.8em;
+ }
+
+ .filagrupos {
+    height: 40px;
+  }
+
+  div.transbox {
+    margin: 10x;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.7;
+  }
+  
+  div.transbox p {
+    margin: 1%;
+    font-weight: bold;
+    color: #000000;
+  }
+  div.transbox h3 {
+    margin: 1%;
+    font-weight: bold;
+    color: #000000;
+  }
+  .myP{
+      font-size: 1em;
+  }
+
+  .myP a{
+    font-size: 1em;
+}
+}
+
+.mediatitle{
+    padding: 2.5%;
+}
+
+.mediasect1{
+    align-items: center;
+}
+
+.iframe1{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#formulario {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 35%;
+    padding: 20px;
+    border:  #000;
+  }
+  
+  .formsection{
+      margin: 10px;
+      font-size: 1.5em;
+  }
+
+ #formulario .input-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    margin-bottom: 15px;
+  }
+  
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+  .button-section{
+    margin-left: 10%;
+  }
+  #formulario input {
+    border: 1px solid #CCC;
+    padding: 5px;
+  }
+
+  .formTitle{padding: 3%;
+    text-align: center;
+    text-decoration: underline;
+    color: #000;
+    font-size: 2.5em;
+ } 
+
+ #error{
+     font-size: 1em large;
+     color: red;     
+ }
+
+ #desplegar{    
+     display: none;
+     width: 100%;
+     font-size: 1.5em;
+     color: #000
+ }
+
+ .hidden {
+    display: none;
+  }
+
+.encuesta{
+    background: #190146;
+    background-image: -webkit-linear-gradient(top, #8ad9f8, #2079b0);
+    background-image: -moz-linear-gradient(top, #8ad9f8, #2079b0);
+    background-image: -ms-linear-gradient(top, #8ad9f8, #2079b0);
+    background-image: -o-linear-gradient(top, #8ad9f8, #2079b0);
+    background-image: linear-gradient(to bottom, #8ad9f8, #2079b0);
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    border-radius: 20px;text-shadow: 3px 2px 1px #9daef5;
+     -webkit-box-shadow: 4px 3px 12px #666666;
+     -moz-box-shadow: 4px 3px 12px #666666;
+    box-shadow: 4px 3px 12px #666666;font-family: Arial;
+    color: #fafafa;
+    font-size: 20px;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.btn2 {
+    border: 2px solid #dff2f8;
+    color: darkslategray;
+    font-weight: bold;
+    padding: 2px;
+    margin: 1px;
+    }
+
+.terms{
+    font-size: 18px !important;
+}
+
+.bordegrupos{
+    width: 100%;
+    border: 1px solid;
+    height: 300px;
+    table-layout: fixed;
+    padding: 15px;
+    font-family: 'Arial';
+    margin: 10px auto;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #00cccc;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+       0px 10px 20px rgba(0,0,0,0.05),
+       0px 20px 20px rgba(0,0,0,0.05),
+       0px 30px 20px rgba(0,0,0,0.05);
+}
+
+th {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+.filagrupos {
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+    height: 80px;
+  }
+
+tr, td {
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+    height: 50px;
+  } 
+
+td:hover {background-color: coral;}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(odd) {background-color: #5ff78d;}
+
+.tablas{
+    overflow-x:auto;
+    text-align: center;
+}
+
+.tabletitle{
+    font-family: FuenteTPO, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+.eliminatorias{
+    width: 80%;
+    border: 1px solid;
+    height: 300px;
+    table-layout: fixed;
+    padding: 15px;
+    font-family: 'Arial';
+    margin: 10px auto;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #00cccc;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+       0px 10px 20px rgba(0,0,0,0.05),
+       0px 20px 20px rgba(0,0,0,0.05),
+       0px 30px 20px rgba(0,0,0,0.05);
+}
+
+.filacompleta{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.final{
+    width: 80%;
+    text-align: center;
+    
+    margin: 10px auto;
+}
